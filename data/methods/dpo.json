@@ -1,0 +1,15 @@
+{
+  "name": "DPO",
+  "description": "Direct Preference Optimization: training with preference pairs without rewards.",
+  "method_type": ["Alignment", "Reward-Free Fine-Tuning"],
+  "gpus_required": 4,
+  "training_speed": "Slow",
+  "model_compatibility": ["LLaMA", "GPT"],
+  "frameworks": ["TRL", "Hugging Face Transformers"],
+  "license": "Apache 2.0",
+  "source": "https://arxiv.org/abs/2305.18290",
+  "open_source": true,
+  "data_requirements": "Preference pairs",
+  "inference_optimized": false,
+  "intended_use": ["Chatbots", "Alignment"]
+}

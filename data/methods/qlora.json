@@ -1,0 +1,15 @@
+{
+  "name": "QLoRA",
+  "description": "Quantized LoRA for memory-efficient fine-tuning of LLMs.",
+  "method_type": ["Quantized Fine-Tuning", "Parameter-Efficient Fine-Tuning"],
+  "gpus_required": 1,
+  "training_speed": "Moderate",
+  "model_compatibility": ["LLaMA", "OPT"],
+  "frameworks": ["Hugging Face Transformers", "PEFT"],
+  "license": "Apache 2.0",
+  "source": "https://arxiv.org/abs/2305.14314",
+  "open_source": true,
+  "data_requirements": "Small labeled dataset",
+  "inference_optimized": true,
+  "intended_use": ["Chatbots", "Summarization"]
+}

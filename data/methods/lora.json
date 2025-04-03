@@ -1,0 +1,15 @@
+{
+  "name": "LoRA",
+  "description": "Low-Rank Adaptation for efficient fine-tuning.",
+  "method_type": ["Parameter-Efficient Fine-Tuning"],
+  "gpus_required": 1,
+  "training_speed": "Fast",
+  "model_compatibility": ["LLaMA", "GPT", "T5"],
+  "frameworks": ["Hugging Face Transformers", "PEFT"],
+  "license": "Apache 2.0",
+  "source": "https://arxiv.org/abs/2106.09685",
+  "open_source": true,
+  "data_requirements": "Labeled dataset (small)",
+  "inference_optimized": true,
+  "intended_use": ["Chatbots", "Classification"]
+}
