@@ -12,6 +12,7 @@ type Method = {
   frameworks: string[];
   license: string;
   source: string;
+  code_url?: string;
   open_source: boolean;
   data_requirements: string;
   inference_optimized: boolean;
@@ -33,6 +34,7 @@ export default function Home({ methods }: { methods: Method[] }) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedGPUs, setSelectedGPUs] = useState<number[]>([]);
   const [selectedSpeeds, setSelectedSpeeds] = useState<string[]>([]);
+  const [hasCode, setHasCode] = useState(false);
 
   const allTypes = Array.from(new Set(methods.flatMap(m => m.method_type))).sort();
   const allGPUs = Array.from(new Set(methods.map(m => m.gpus_required))).sort((a, b) => a - b);
@@ -50,16 +52,43 @@ export default function Home({ methods }: { methods: Method[] }) {
     const typeMatch = selectedTypes.length === 0 || m.method_type.some(t => selectedTypes.includes(t));
     const gpuMatch = selectedGPUs.length === 0 || selectedGPUs.includes(m.gpus_required);
     const speedMatch = selectedSpeeds.length === 0 || selectedSpeeds.includes(m.training_speed);
-    return typeMatch && gpuMatch && speedMatch;
+    const codeMatch = !hasCode || Boolean(m.code_url);
+    return typeMatch && gpuMatch && speedMatch && codeMatch;
   });
 
   return (
     <div className="flex flex-col md:flex-row max-w-7xl mx-auto p-6 gap-6">
       {/* Sidebar */}
       <div className="w-full md:w-1/4 space-y-6">
-        <FilterGroup title="Method Type" items={allTypes} selected={selectedTypes} toggle={(v) => toggle(v, selectedTypes, setSelectedTypes)} />
-        <FilterGroup title="GPUs Required" items={allGPUs} selected={selectedGPUs} toggle={(v) => toggle(v, selectedGPUs, setSelectedGPUs)} />
-        <FilterGroup title="Training Speed" items={allSpeeds} selected={selectedSpeeds} toggle={(v) => toggle(v, selectedSpeeds, setSelectedSpeeds)} />
+        <FilterGroup
+          title="Method Type"
+          items={allTypes}
+          selected={selectedTypes}
+          toggle={(v) => toggle(v, selectedTypes, setSelectedTypes)}
+        />
+        <FilterGroup
+          title="GPUs Required"
+          items={allGPUs}
+          selected={selectedGPUs}
+          toggle={(v) => toggle(v, selectedGPUs, setSelectedGPUs)}
+        />
+        <FilterGroup
+          title="Training Speed"
+          items={allSpeeds}
+          selected={selectedSpeeds}
+          toggle={(v) => toggle(v, selectedSpeeds, setSelectedSpeeds)}
+        />
+        <div>
+          <h3 className="font-semibold mb-2">Has Open Source Code</h3>
+          <label className="flex items-center gap-2 text-sm mb-4">
+            <input
+              type="checkbox"
+              checked={hasCode}
+              onChange={() => setHasCode(!hasCode)}
+            />
+            Show only methods with public code
+          </label>
+        </div>
       </div>
 
       {/* Method Cards */}
@@ -76,6 +105,9 @@ export default function Home({ methods }: { methods: Method[] }) {
               <p>💻 GPUs: {method.gpus_required}</p>
               <p>⚡ Speed: {method.training_speed}</p>
               <p>🔗 <a href={method.source} target="_blank" rel="noreferrer" className="text-blue-500">Paper</a></p>
+              {method.code_url && (
+                <p>📂 <a href={method.code_url} target="_blank" rel="noreferrer" className="text-blue-500">Code</a></p>
+              )}
             </div>
           </div>
         ))}
@@ -85,7 +117,17 @@ export default function Home({ methods }: { methods: Method[] }) {
 }
 
 // Sidebar Filter Group Component
-function FilterGroup({ title, items, selected, toggle }: { title: string, items: any[], selected: any[], toggle: (val: any) => void }) {
+function FilterGroup({
+  title,
+  items,
+  selected,
+  toggle,
+}: {
+  title: string;
+  items: any[];
+  selected: any[];
+  toggle: (val: any) => void;
+}) {
   return (
     <div>
       <h3 className="font-semibold mb-2">{title}</h3>

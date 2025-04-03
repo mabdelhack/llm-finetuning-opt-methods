@@ -1,40 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🧠 LLM Optimization Methods Explorer
 
-## Getting Started
+A collaborative, filterable database of fine-tuning and optimization techniques for large language models (LLMs). This tool helps researchers, engineers, and enthusiasts explore, compare, and contribute methods used to optimize LLMs for performance, alignment, memory efficiency, and more.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔗 Live Demo
+
+Check out the deployed version here:  
+👉 **[https://your-deployment-url.com](https://your-deployment-url.com)**  
+*(Replace this with your actual Vercel or Netlify link)*
+
+---
+
+## ✨ Features
+
+- 🔍 Filter methods by type, GPU requirement, training speed, and more  
+- ✅ Multi-select filters via sidebar (like online shopping UX)  
+- 📁 Methods stored in editable JSON or CSV format  
+- 🧑‍💻 Open-source and community-contributable via GitHub  
+- 🔄 Sync tools to convert CSV ⇄ JSON  
+
+---
+
+## 🚀 Getting Started
+
+### 🧱 Prerequisites
+
+- Node.js ≥ 18  
+- npm ≥ 8  
+- Python ≥ 3.8 (for CSV ↔ JSON scripts)  
+
+### 🛠️ Run Locally
+
+1. Clone the repo:
+
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/llm-methods-explorer.git
+    cd llm-methods-explorer
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Start the dev server:
+
+    ```bash
+    npm run dev
+    ```
+
+4. Open your browser at [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🧩 Contributing
+
+We welcome contributions of new methods and improvements!
+
+Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for how to:
+
+- Add a method via CSV or JSON  
+- Regenerate method files using `convert_csv_to_json.py`  
+- Submit a pull request  
+
+---
+
+## 🗃️ File Structure
+
+```txt
+data/
+  methods/                # All method JSON files
+pages/
+  index.tsx              # Frontend logic
+convert_csv_to_json.py   # CSV → JSON generator
+convert_json_to_csv.py   # JSON → CSV exporter
+llm_methods.csv          # Master editable CSV
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📜 License
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🙌 Acknowledgments
 
-## Learn More
+Built using:
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/)
+- [Hugging Face](https://huggingface.co/)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+And with inspiration from the amazing open-source AI community 💙
