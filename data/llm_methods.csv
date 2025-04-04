@@ -59,7 +59,6 @@ Learning from Execution Feedback During Training,,,,,,,Apache 2.0,,,False,,False
 Model Dynamics with Simple Cross-Attention Layers,,,,,,,Apache 2.0,,,False,,False,
 Adjusting Gradients of Low-Rank Matrices,,,,,,,Apache 2.0,,,False,,False,
 Reasoning Based on Finite State Machine,,,,,,,Apache 2.0,,,False,,False,
-Activation Patterns in Large Language Models,,,,,,,Apache 2.0,,,False,,False,
 Sequence-Level Prefix Information,,,,,,,Apache 2.0,,,False,,False,
 Local Semantic Adaptability,,,,,,,Apache 2.0,,,False,,False,
 Data Rehearsal,Reusing past data during training to retain knowledge.,Forgetting Mitigation,,,,,Apache 2.0,,,False,,False,
