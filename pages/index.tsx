@@ -24,7 +24,7 @@ export async function getStaticProps() {
   const filenames = fs.readdirSync(dir);
   const methods = filenames.map((filename) => {
     const file = fs.readFileSync(path.join(dir, filename), "utf-8");
-    return JSON.parse(file);
+    return JSON.parse(file) as Method;
   });
 
   return { props: { methods } };
@@ -34,13 +34,17 @@ export default function Home({ methods }: { methods: Method[] }) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedGPUs, setSelectedGPUs] = useState<number[]>([]);
   const [selectedSpeeds, setSelectedSpeeds] = useState<string[]>([]);
-  const [hasCode, setHasCode] = useState(false);
+  const [hasCode, setHasCode] = useState<boolean>(false);
 
-  const allTypes = Array.from(new Set(methods.flatMap(m => m.method_type))).sort();
-  const allGPUs = Array.from(new Set(methods.map(m => m.gpus_required))).sort((a, b) => a - b);
-  const allSpeeds = Array.from(new Set(methods.map(m => m.training_speed))).sort();
+  const allTypes = Array.from(new Set(methods.flatMap((m) => m.method_type))).sort();
+  const allGPUs = Array.from(new Set(methods.map((m) => m.gpus_required))).sort((a, b) => a - b);
+  const allSpeeds = Array.from(new Set(methods.map((m) => m.training_speed))).sort();
 
-  const toggle = (value: any, list: any[], setList: (x: any[]) => void) => {
+  const toggle = <T extends string | number>(
+    value: T,
+    list: T[],
+    setList: (list: T[]) => void
+  ) => {
     if (list.includes(value)) {
       setList(list.filter((v) => v !== value));
     } else {
@@ -49,7 +53,7 @@ export default function Home({ methods }: { methods: Method[] }) {
   };
 
   const filtered = methods.filter((m) => {
-    const typeMatch = selectedTypes.length === 0 || m.method_type.some(t => selectedTypes.includes(t));
+    const typeMatch = selectedTypes.length === 0 || m.method_type.some((t) => selectedTypes.includes(t));
     const gpuMatch = selectedGPUs.length === 0 || selectedGPUs.includes(m.gpus_required);
     const speedMatch = selectedSpeeds.length === 0 || selectedSpeeds.includes(m.training_speed);
     const codeMatch = !hasCode || Boolean(m.code_url);
@@ -116,18 +120,20 @@ export default function Home({ methods }: { methods: Method[] }) {
   );
 }
 
-// Sidebar Filter Group Component
-function FilterGroup({
+// Generic, type-safe FilterGroup
+type FilterGroupProps<T extends string | number> = {
+  title: string;
+  items: T[];
+  selected: T[];
+  toggle: (val: T) => void;
+};
+
+function FilterGroup<T extends string | number>({
   title,
   items,
   selected,
   toggle,
-}: {
-  title: string;
-  items: any[];
-  selected: any[];
-  toggle: (val: any) => void;
-}) {
+}: FilterGroupProps<T>) {
   return (
     <div>
       <h3 className="font-semibold mb-2">{title}</h3>
