@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name,description,method_type,source,code_url,open_source,gpus_required,training_speed,intended_use
 Supervised Fine-Tuning (SFT),Involves training a pre-trained LLM on a labeled dataset to adapt it to specific tasks or domains.,Fine-Tuning,https://arxiv.org/abs/2412.13337,https://github.com/huggingface/trl/blob/main/trl/scripts/sft.py,Yes,Varies,Moderate,Task Adaptation
 Reward Modeling,"Involves training a model to predict human preferences or rewards, often used in reinforcement learning to guide the behavior of LLMs.",Alignment,https://arxiv.org/abs/2502.10325,https://github.com/sanjibanc/agent_prm,Yes,Varies,Moderate,Preference Prediction
@@ -86,3 +87,77 @@ FactPEGASUS: Factuality-Aware Pre-training and Fine-tuning for Abstractive Summa
 LoRA-Pro,"A method that enhances LoRA's performance by strategically adjusting the gradients of these low-rank matrices. This adjustment allows the low-rank gradient to more accurately approximate the full fine-tuning gradient, thereby narrowing the performance gap between LoRA and full fine-tuning.",Fine-Tuning,https://openreview.net/forum?id=gTwRMU3lJ5,https://github.com/mrflogs/LoRA-Pro,Yes,Low,Fast,Enhanced Parameter-Efficient Tuning
 Retrieval Instead of Fine-tuning,"A method that creates a vectorized database of LoRAs, enabling efficient retrieval and application of model adaptations to new tasks",Fine-Tuning,https://arxiv.org/abs/2410.09908,N/A,N/A,Low,Fast,Retrieval-Augmented Applications
 Cicada: A Pipeline-Efficient Approach to Serverless Inference with Decoupled Management,A method to ensure that high-priority inference tasks are completed swiftly by modifying resource allocation,Optimization,https://arxiv.org/abs/2502.20959,N/A,N/A,Medium,Fast,Efficient Inference Task Routing
+=======
+name,description,method_type,gpus_required,training_speed,model_compatibility,frameworks,license,source,code_url,open_source,data_requirements,inference_optimized,intended_use
+Reinforcement Learning from Human Feedback (RLHF),A method that aligns LLMs using reward models trained from human preferences.,"Alignment, RL",,,,,Apache 2.0,,,False,,False,
+Supervised Fine-Tuning (SFT),Fine-tuning using labeled datasets to align models with desired outputs.,Fine-Tuning,2.0,Moderate,,,Apache 2.0,,,False,,False,
+Low-Rank Adaptation (LoRA),A parameter-efficient fine-tuning technique using low-rank updates.,PEFT,,,,,Apache 2.0,,,False,,False,
+Singular Value Fine-Tuning (SVF),,,,,,,Apache 2.0,,,False,,False,
+Parameter-Efficient Fine-Tuning (PEFT),,,,,,,Apache 2.0,,,False,,False,
+Category-Wise Fine-Tuning (CFT),,,,,,,Apache 2.0,,,False,,False,
+Sequential Fine-Tuning,,,,,,,Apache 2.0,,,False,,False,
+Gradient-Guided Annealing,,,,,,,Apache 2.0,,,False,,False,
+Hierarchical Decoder Stack,,,,,,,Apache 2.0,,,False,,False,
+Modular LoRA,,,,,,,Apache 2.0,,,False,,False,
+Multi-Model Stochastic Particle-Based Variational Bayesian Inference,,,,,,,Apache 2.0,,,False,,False,
+Path Scheduling,,,,,,,Apache 2.0,,,False,,False,
+Direct Preference Optimization (DPO),A reward-free alignment method using pairwise preference data.,Alignment,,,,,Apache 2.0,,,False,,False,
+Factuality-Aware Fine-Tuning,,,,,,,Apache 2.0,,,False,,False,
+Knowledge Modularization and Cross-Modal Coordination,,,,,,,Apache 2.0,,,False,,False,
+Instruction Finetuning,Aligns models with human-like instructions using supervised data.,Fine-Tuning,,,,,Apache 2.0,,,False,,False,Instruction Following
+Dialogue Finetuning,Optimizing LLMs for multi-turn conversations.,Fine-Tuning,,,,,Apache 2.0,,,False,,False,Dialogue Agents
+Chain-of-Thought (CoT) Finetuning,Supervised tuning using reasoning-based chains for better logical output.,Reasoning,,,,,Apache 2.0,,,False,,False,
+Domain-Specific Finetuning,,,,,,,Apache 2.0,,,False,,False,
+Distillation-Based Finetuning,Transferring knowledge from large teacher models to smaller student models.,Distillation,,,,,Apache 2.0,,,False,,False,
+Preference and Alignment Supervised Finetuning (SFT),,,,,,,Apache 2.0,,,False,,False,
+QLoRA and GPTQ,Quantization-aware fine-tuning and inference optimization techniques for LLMs.,"Quantization, PEFT",1.0,,,"Hugging Face, GPTQ",Apache 2.0,,,True,,True,"Chatbots, Summarization"
+SparseGPT,Sparse fine-tuning method optimizing memory and computation.,"Quantization, Sparse",1.0,Fast,,,Apache 2.0,,,True,,True,Inference Optimization
+AdaLoRA,Adaptive version of LoRA that adjusts rank during training.,PEFT,,Fast,,PEFT,Apache 2.0,,,True,,False,
+P-Tuning v2,Prefix-based prompt tuning with improved generalization.,Prompt Tuning,,,,,Apache 2.0,,,False,,False,
+Tree-of-Thoughts (ToT) and Graph of Thoughts (GoT),Extends CoT by exploring reasoning paths as trees or graphs.,Reasoning,,,,,Apache 2.0,,,False,,False,
+Confidence-Based Sampling,,,,,,,Apache 2.0,,,False,,False,
+Search Against Verifiers,,,,,,,Apache 2.0,,,False,,False,
+Monte Carlo Tree Search (MCTS),Search strategy to optimize output by evaluating multiple reasoning paths.,Reasoning,,,,,Apache 2.0,,,False,,False,
+Chain-of-Action-Thought Reasoning,,,,,,,Apache 2.0,,,False,,False,
+Precision Optimization,,,,,,,Apache 2.0,,,False,,False,
+Post-Training Techniques,,,,,,,Apache 2.0,,,False,,False,
+Computational Performance Optimization,,,,,,,Apache 2.0,,,False,,False,
+Stochastic Rounding and BF16,,,,,,,Apache 2.0,,,False,,False,
+Phrasal Paraphrase Relations,,,,,,,Apache 2.0,,,False,,False,
+Hyperparameter Tuning,,,,,,,Apache 2.0,,,False,,False,
+Low-Bit Quantization,,,,,,,Apache 2.0,,,False,,False,
+Sparse Implementations,,,,,,,Apache 2.0,,,False,,False,
+Zeroth-Order (ZO) Optimization,,,,,,,Apache 2.0,,,False,,False,
+Long-Sequence Inference Optimization,,,,,,,Apache 2.0,,,False,,False,
+Resource Management Strategies,,,,,,,Apache 2.0,,,False,,False,
+Alignment Loss and Bidirectional Negative Feedback (BNF),,,,,,,Apache 2.0,,,False,,False,
+Learning-on-Model Framework,,,,,,,Apache 2.0,,,False,,False,
+Parallel Strategies,,,,,,,Apache 2.0,,,False,,False,
+Ensembling Zero-Shot and Fine-Tuned Models,,,,,,,Apache 2.0,,,False,,False,
+Fine-Tuning of Sparse LLM,,,,,,,Apache 2.0,,,False,,False,
+Optimal Reinforcement Learning Post-Training,,,,,,,Apache 2.0,,,False,,False,
+Content-Preserving Optimization with Attention Distillation Loss,,,,,,,Apache 2.0,,,False,,False,
+Graph-Driven Dynamic Similarity Grouping,,,,,,,Apache 2.0,,,False,,False,
+Adaptivity to Contextual or Structural Demands,,,,,,,Apache 2.0,,,False,,False,
+Tuning Dynamics Based on Singular Value Decomposition,,,,,,,Apache 2.0,,,False,,False,
+Backpropagation-Free Optimization,,,,,,,Apache 2.0,,,False,,False,
+Prompt-Based Uncertainty Estimation,,,,,,,Apache 2.0,,,False,,False,
+Optimized Training Hyperparameters for Multiscale Byte Language Models,,,,,,,Apache 2.0,,,False,,False,
+Low-Rank Approximation,,,,,,,Apache 2.0,,,False,,False,
+Optimizations in LLM Scheduling and Resource Management,,,,,,,Apache 2.0,,,False,,False,
+Learning from Execution Feedback During Training,,,,,,,Apache 2.0,,,False,,False,
+Model Dynamics with Simple Cross-Attention Layers,,,,,,,Apache 2.0,,,False,,False,
+Adjusting Gradients of Low-Rank Matrices,,,,,,,Apache 2.0,,,False,,False,
+Reasoning Based on Finite State Machine,,,,,,,Apache 2.0,,,False,,False,
+Sequence-Level Prefix Information,,,,,,,Apache 2.0,,,False,,False,
+Local Semantic Adaptability,,,,,,,Apache 2.0,,,False,,False,
+Data Rehearsal,Reusing past data during training to retain knowledge.,Forgetting Mitigation,,,,,Apache 2.0,,,False,,False,
+Elastic Weight Consolidation,Regularization-based technique to mitigate catastrophic forgetting.,Forgetting Mitigation,,,,,Apache 2.0,,,False,,False,
+Hierarchical Network Organization,,,,,,,Apache 2.0,,,False,,False,
+Position-Wise Prompts,,,,,,,Apache 2.0,,,False,,False,
+Center Vector Regularization (CVR),,,,,,,Apache 2.0,,,False,,False,
+Quantum Circuit Optimization,Training and optimizing language models on quantum computing circuits.,Quantum,,,,,Apache 2.0,,,False,,False,
+Encoding Sentences into Quantum Space,,,,,,,Apache 2.0,,,False,,False,
+Reduction Process and Quantum Gates,,,,,,,Apache 2.0,,,False,,False,
+Hyperparameters in Quantum Circuits,,,,,,,Apache 2.0,,,False,,False,
+>>>>>>> refs/remotes/origin/main
