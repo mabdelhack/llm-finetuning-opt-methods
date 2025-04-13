@@ -1,0 +1,15 @@
+{
+  "name": "Learning-on-Model Framework",
+  "description": "Learns the parameters of the heterogeneous sub-models via convolutional compression",
+  "method_type": [
+    "Post-Training"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.20639",
+  "code_url": "https://github.com/lemingshen/FedConv",
+  "open_source": false,
+  "intended_use": [
+    "Continuous Learning"
+  ]
+}

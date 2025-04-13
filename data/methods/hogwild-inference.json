@@ -1,0 +1,15 @@
+{
+  "name": "Hogwild! Inference",
+  "description": "Runs LLM \"workers\" in parallel , allowing them to synchronize via a concurrently-updated attention cache and prompt these workers to decide how best to collaborate",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2504.06261",
+  "code_url": "https://github.com/eqimp/hogwild_llm",
+  "open_source": false,
+  "intended_use": [
+    "Scalable Training and Inference"
+  ]
+}

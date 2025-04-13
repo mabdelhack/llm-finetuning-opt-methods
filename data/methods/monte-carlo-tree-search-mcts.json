@@ -1,0 +1,13 @@
+{
+  "name": "Monte Carlo Tree Search (MCTS)",
+  "description": "A decision-making algorithm that balances exploration and exploitation by performing random sampling in the form of simulations and storing statistics of actions to make educated choices in each iteration.",
+  "method_type": [],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2305.14078",
+  "code_url": "https://github.com/1989Ryan/llm-mcts",
+  "open_source": false,
+  "intended_use": [
+    "Sequential Decision Problems"
+  ]
+}

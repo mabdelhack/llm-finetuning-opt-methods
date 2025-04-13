@@ -1,0 +1,15 @@
+{
+  "name": "HydraLoRA",
+  "description": "An Asymmetric LoRA Architecture for Efficient Fine-Tuning",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://openreview.net/forum?id=qEpi8uWX3N",
+  "code_url": "https://github.com/Clin0212/HydraLoRA/tree/main/MLLM-HydraLoRA",
+  "open_source": false,
+  "intended_use": [
+    "Multi-Modal Generation"
+  ]
+}

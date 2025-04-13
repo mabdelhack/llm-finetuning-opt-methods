@@ -1,0 +1,15 @@
+{
+  "name": "SparseGPT",
+  "description": "A one-shot pruning method that efficiently reduces the size of massive language models by removing unimportant weights, achieving significant sparsity with negligible impact on performance.",
+  "method_type": [
+    "Pruning"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2301.00774",
+  "code_url": "https://github.com/IST-DASLab/sparsegpt",
+  "open_source": false,
+  "intended_use": [
+    "Model Compression"
+  ]
+}

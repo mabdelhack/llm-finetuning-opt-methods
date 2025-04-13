@@ -1,0 +1,15 @@
+{
+  "name": "Content-Preserving Optimization with Attention Distillation Loss",
+  "description": "Enhances LLMs by preserving the content of original inputs while optimizing attention mechanisms, leading to improved performance without sacrificing the integrity of the input data.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://adasci.org/attention-based-distillation-in-llms-a-comprehensive-overview/",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Content Preservation"
+  ]
+}

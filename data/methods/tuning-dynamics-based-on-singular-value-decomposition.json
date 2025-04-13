@@ -1,0 +1,15 @@
+{
+  "name": "Tuning Dynamics Based on Singular Value Decomposition",
+  "description": "Applies singular value decomposition techniques to adjust the dynamics of LLMs during training, leading to more efficient learning and better generalization.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2403.19067",
+  "code_url": "https://github.com/zstarN70/RLRR",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Training Dynamics"
+  ]
+}

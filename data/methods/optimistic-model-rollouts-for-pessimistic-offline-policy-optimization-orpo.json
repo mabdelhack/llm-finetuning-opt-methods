@@ -1,0 +1,15 @@
+{
+  "name": "Optimistic model Rollouts for Pessimistic offline policy Optimization (ORPO)",
+  "description": "A value-based algorithm for KL-regularized reinforcement learning that guides the reference policy using the optimal regularized Q function, aiming for optimal policy learning in LLM post-training.",
+  "method_type": [
+    "Alignment"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/abs/2401.05899",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Policy Optimization"
+  ]
+}

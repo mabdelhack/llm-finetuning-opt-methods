@@ -1,0 +1,15 @@
+{
+  "name": "Category-Wise Fine-Tuning (CFT)",
+  "description": "Fine-tunes models by focusing on individual categories, using known labels to adjust model predictions and reduce inaccuracies caused by incorrect pseudo-labels.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2401.16991",
+  "code_url": "https://github.com/maxium0526/category-wise-fine-tuning",
+  "open_source": false,
+  "intended_use": [
+    "Classification Tasks"
+  ]
+}

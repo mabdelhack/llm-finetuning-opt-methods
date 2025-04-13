@@ -24,16 +24,11 @@ for _, row in df.iterrows():
         "name": row["name"],
         "description": row["description"],
         "method_type": [s.strip() for s in str(row["method_type"]).split(",") if s.strip()],
-        "gpus_required": int(row["gpus_required"]) if str(row["gpus_required"]).isdigit() else None,
+        "gpus_required": row["gpus_required"],
         "training_speed": row["training_speed"],
-        "model_compatibility": [s.strip() for s in str(row["model_compatibility"]).split(",") if s.strip()],
-        "frameworks": [s.strip() for s in str(row["frameworks"]).split(",") if s.strip()],
-        "license": row["license"],
         "source": row["source"],
         "code_url": row["code_url"],
         "open_source": str(row["open_source"]).lower() == "true",
-        "data_requirements": row["data_requirements"],
-        "inference_optimized": str(row["inference_optimized"]).lower() == "true",
         "intended_use": [s.strip() for s in str(row["intended_use"]).split(",") if s.strip()]
     }
 

@@ -1,0 +1,15 @@
+{
+  "name": "AdaLoRA",
+  "description": "An adaptive budget allocation method for parameter-efficient fine-tuning that dynamically assigns parameter budgets among weight matrices based on their importance, enhancing fine-tuning performance while maintaining efficiency.",
+  "method_type": [
+    "PEFT"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2303.10512",
+  "code_url": "https://github.com/QingruZhang/AdaLoRA",
+  "open_source": false,
+  "intended_use": [
+    "Task Adaptation"
+  ]
+}

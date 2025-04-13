@@ -1,0 +1,15 @@
+{
+  "name": "PEARL: Learning to Paraphrase for Alignment with LLM Preference",
+  "description": "Methods that enhance LLM performance by incorporating phrasal paraphrase relations, improving the model's ability to understand and generate diverse expressions of the same meaning.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://aclanthology.org/2024.findings-emnlp.134/",
+  "code_url": "https://github.com/630bdd/PEARL",
+  "open_source": false,
+  "intended_use": [
+    "Enhanced Language Understanding"
+  ]
+}

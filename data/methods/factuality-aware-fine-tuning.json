@@ -1,0 +1,15 @@
+{
+  "name": "Factuality-Aware Fine-Tuning",
+  "description": "A technique aimed at reducing hallucinations in LLMs by identifying and mitigating factors that lead to factual inaccuracies during both supervised fine-tuning and reinforcement learning alignment steps.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2405.01525",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Improving Response Factuality"
+  ]
+}

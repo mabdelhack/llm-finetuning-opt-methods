@@ -1,0 +1,15 @@
+{
+  "name": "Tree-of-Thoughts (ToT)",
+  "description": "A framework that enhances problem-solving capabilities of LLMs by allowing deliberate decision-making through exploration of multiple reasoning paths, enabling backtracking and strategic planning.",
+  "method_type": [
+    "Reasoning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2305.10601",
+  "code_url": "https://github.com/princeton-nlp/tree-of-thought-llm",
+  "open_source": false,
+  "intended_use": [
+    "Complex Problem Solving"
+  ]
+}

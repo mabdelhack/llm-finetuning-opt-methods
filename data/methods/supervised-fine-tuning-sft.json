@@ -1,0 +1,15 @@
+{
+  "name": "Supervised Fine-Tuning (SFT)",
+  "description": "Involves training a pre-trained LLM on a labeled dataset to adapt it to specific tasks or domains.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2412.13337",
+  "code_url": "https://github.com/huggingface/trl/blob/main/trl/scripts/sft.py",
+  "open_source": false,
+  "intended_use": [
+    "Task Adaptation"
+  ]
+}

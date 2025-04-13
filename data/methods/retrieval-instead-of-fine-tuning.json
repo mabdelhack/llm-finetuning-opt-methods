@@ -1,0 +1,15 @@
+{
+  "name": "Retrieval Instead of Fine-tuning",
+  "description": "A method that creates a vectorized database of LoRAs, enabling efficient retrieval and application of model adaptations to new tasks",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2410.09908",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Retrieval-Augmented Applications"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Long-Sequence Inference Optimization",
+  "description": "Techniques designed to improve the efficiency and accuracy of LLMs when processing long input sequences, addressing challenges like context fragmentation and memory limitations.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/abs/2309.12307",
+  "code_url": "https://github.com/dvlab-research/LongLoRA",
+  "open_source": false,
+  "intended_use": [
+    "Long-Context Processing"
+  ]
+}

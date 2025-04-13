@@ -1,0 +1,16 @@
+{
+  "name": "Prompt Templates",
+  "description": "Prompt templates are used during fine-tuning and inference play a crucial role in preserving safety alignment, and proposes the ``Pure Tuning, Safe Testing'' (PTST) strategy -- fine-tune models without a safety prompt, but include it at test time",
+  "method_type": [
+    "Post-Training"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2402.18540",
+  "code_url": "https://github.com/vfleaking/PTST",
+  "open_source": false,
+  "intended_use": [
+    "Prompt Engineering",
+    "Task Instruction"
+  ]
+}

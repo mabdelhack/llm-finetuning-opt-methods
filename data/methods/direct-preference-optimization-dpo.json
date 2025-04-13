@@ -1,0 +1,15 @@
+{
+  "name": "Direct Preference Optimization (DPO)",
+  "description": "An algorithm that directly optimizes a language model to adhere to human preferences without explicit reward modeling or reinforcement learning, simplifying the alignment process.",
+  "method_type": [
+    "Alignment"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2305.18290",
+  "code_url": "https://github.com/eric-mitchell/direct-preference-optimization",
+  "open_source": false,
+  "intended_use": [
+    "Preference Alignment"
+  ]
+}

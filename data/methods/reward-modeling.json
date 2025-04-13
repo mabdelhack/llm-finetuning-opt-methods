@@ -1,0 +1,15 @@
+{
+  "name": "Reward Modeling",
+  "description": "Involves training a model to predict human preferences or rewards, often used in reinforcement learning to guide the behavior of LLMs.",
+  "method_type": [
+    "Alignment"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.10325",
+  "code_url": "https://github.com/sanjibanc/agent_prm",
+  "open_source": false,
+  "intended_use": [
+    "Preference Prediction"
+  ]
+}

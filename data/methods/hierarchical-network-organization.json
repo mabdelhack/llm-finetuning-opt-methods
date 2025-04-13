@@ -1,0 +1,15 @@
+{
+  "name": "Hierarchical Network Organization",
+  "description": "Organizes neural network architectures in a hierarchical manner to capture multi-scale features, enhancing the model's ability to generalize across tasks and improving performance on complex problems.",
+  "method_type": [
+    "Architecture"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.67.026112",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Complex Problem Solving"
+  ]
+}

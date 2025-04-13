@@ -1,0 +1,15 @@
+{
+  "name": "CURLoRA",
+  "description": "CURLoRA outperforms standard LoRA in mitigating catastrophic forgetting. It maintains model stability and performance across tasks while significantly reducing the number of trainable parameters.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2408.14572",
+  "code_url": "https://github.com/MNoorFawi/curlora",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Finetuning"
+  ]
+}

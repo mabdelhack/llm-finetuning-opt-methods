@@ -1,0 +1,15 @@
+{
+  "name": "CLoQ (Calibrated LoRA Initialization for Quantized LLMs)",
+  "description": "An initialization strategy that enhances fine-tuning of quantized LLMs by minimizing discrepancies between original and quantized models, improving performance especially at ultra-low bit widths.",
+  "method_type": [
+    "Quantization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2501.18475",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Fine-Tuning"
+  ]
+}

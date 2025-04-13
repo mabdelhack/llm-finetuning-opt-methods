@@ -1,0 +1,15 @@
+{
+  "name": "Model Dynamics with Simple Cross-Attention Layers",
+  "description": "Enhances LLMs by integrating simple cross-attention layers, improving the interaction between different input representations and boosting model performance.",
+  "method_type": [
+    "Architecture"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://tobias-kirschstein.github.io/avat3r/static/Avat3r_paper.pdf",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Improved Input Interaction"
+  ]
+}

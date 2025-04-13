@@ -1,0 +1,15 @@
+{
+  "name": "Quantum Circuit Optimization",
+  "description": "Techniques aimed at improving the efficiency and performance of quantum circuits by reducing gate counts, optimizing gate sequences, and minimizing errors, crucial for effective quantum computations.",
+  "method_type": [
+    "Quantum Computing"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://www.mdpi.com/2624-960X/7/1/2",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Quantum Algorithm Design"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Search Against Verifiers",
+  "description": "A post-training paradigm that leverages automated verifiers to perform verification tasks and deliver meaningful feedback to foundation models, enhancing their performance and reliability.",
+  "method_type": [
+    "Post-Training"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2411.11504",
+  "code_url": "https://github.com/icip-cas/Verifier-Engineering",
+  "open_source": false,
+  "intended_use": [
+    "Model Alignment"
+  ]
+}

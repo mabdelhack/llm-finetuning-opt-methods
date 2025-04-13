@@ -1,0 +1,15 @@
+{
+  "name": "Precision Optimization",
+  "description": "A method that optimizes the precision-recall trade-off in generative modeling by utilizing divergence optimization techniques, applicable to models like GANs and normalizing flows.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2305.18910",
+  "code_url": "https://github.com/AlexVerine/RejectBigGan",
+  "open_source": false,
+  "intended_use": [
+    "Generative Modeling"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Prompt-Based Uncertainty Estimation",
+  "description": "Incorporates uncertainty estimation techniques into prompt-based learning, allowing LLMs to assess the confidence of their responses and improve reliability.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2209.06995",
+  "code_url": "https://github.com/yueyu1030/Patron",
+  "open_source": false,
+  "intended_use": [
+    "Reliable Response Generation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "LoRA-Pro",
+  "description": "A method that enhances LoRA's performance by strategically adjusting the gradients of these low-rank matrices. This adjustment allows the low-rank gradient to more accurately approximate the full fine-tuning gradient, thereby narrowing the performance gap between LoRA and full fine-tuning.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://openreview.net/forum?id=gTwRMU3lJ5",
+  "code_url": "https://github.com/mrflogs/LoRA-Pro",
+  "open_source": false,
+  "intended_use": [
+    "Enhanced Parameter-Efficient Tuning"
+  ]
+}

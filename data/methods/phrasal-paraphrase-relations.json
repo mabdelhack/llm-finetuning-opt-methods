@@ -1,0 +1,15 @@
+{
+  "name": "Phrasal Paraphrase Relations",
+  "description": "Methods that enhance LLM performance by incorporating phrasal paraphrase relations, improving the model's ability to understand and generate diverse expressions of the same meaning.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://aclanthology.org/D19-1542/",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Language Understanding / Paraphrasing"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Multi-Model Stochastic Particle-Based Variational Bayesian Inference",
+  "description": "A framework capable of exploring multiple high-dimensional parameter spaces for joint model selection and parameter estimation, addressing challenges in complex estimation problems.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/abs/2502.20690",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Model Selection and Parameter Estimation"
+  ]
+}

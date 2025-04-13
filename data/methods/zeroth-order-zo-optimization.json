@@ -1,0 +1,15 @@
+{
+  "name": "Zeroth-Order (ZO) Optimization",
+  "description": "Optimization techniques that estimate gradients using function evaluations, useful when gradient information is unavailable or expensive to compute, applicable in fine-tuning LLMs.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2402.11592",
+  "code_url": "https://github.com/ZO-Bench/ZO-LLM",
+  "open_source": false,
+  "intended_use": [
+    "Model Optimization"
+  ]
+}

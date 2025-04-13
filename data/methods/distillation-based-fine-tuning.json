@@ -1,0 +1,15 @@
+{
+  "name": "Distillation-Based Fine-Tuning",
+  "description": "Training smaller models to replicate the behavior of larger LLMs, achieving similar performance with reduced computational requirements through knowledge distillation techniques.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://snorkel.ai/blog/llm-distillation-demystified-a-complete-guide/",
+  "code_url": "https://huggingface.co/docs/optimum/en/index",
+  "open_source": false,
+  "intended_use": [
+    "Model Compression"
+  ]
+}

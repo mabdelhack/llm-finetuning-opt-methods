@@ -1,0 +1,15 @@
+{
+  "name": "Astra",
+  "description": " Astra searches for the efficiency-optimal parallel strategy in both GPU configurations search space (GPU types and GPU numbers) and parallel parameters search space. Then, Astra also provides the solution on heterogeneous GPUs by mathematically modeling the time consumption of heterogeneous training",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2502.13480",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Scalable Training and Inference"
+  ]
+}

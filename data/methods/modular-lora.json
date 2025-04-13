@@ -1,0 +1,15 @@
+{
+  "name": "Modular LoRA",
+  "description": "Extends LoRA by creating a library of LoRA adapters for different tasks, enabling modular and reusable components for efficient multi-task learning.",
+  "method_type": [
+    "PEFT"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2405.11157",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Multi-Task Learning"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Low-Bit Quantization",
+  "description": "Techniques that reduce the precision of model weights and activations to lower bit-widths (e.g., 8-bit or 4-bit), decreasing memory usage and computational requirements while maintaining acceptable performance.",
+  "method_type": [
+    "Quantization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2411.17691",
+  "code_url": "https://huggingface.co/Xu-Ouyang",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Deployment"
+  ]
+}

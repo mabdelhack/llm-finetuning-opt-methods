@@ -1,0 +1,15 @@
+{
+  "name": "Gradient-Guided Annealing",
+  "description": "Aims to improve domain generalization by iteratively annealing model parameters in the early stages of training to align gradients across domains, reducing domain conflicts.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.20162",
+  "code_url": "https://github.com/aristotelisballas/GGA",
+  "open_source": false,
+  "intended_use": [
+    "Domain Generalization"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Confidence-Based Sampling",
+  "description": "An uncertainty quantification framework that combines direct confidence elicitation and sample-based consistency methods to provide better calibration for NLP misinformation mitigation solutions.",
+  "method_type": [
+    "Uncertainty Estimation"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2401.08694",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Misinformation Mitigation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Alignment Loss and Bidirectional Negative Feedback (BNF)",
+  "description": "Techniques that incorporate alignment loss functions and bidirectional negative feedback mechanisms to fine-tune LLMs, improving their alignment with human preferences and reducing undesirable behaviors.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2410.04834",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Model Alignment"
+  ]
+}

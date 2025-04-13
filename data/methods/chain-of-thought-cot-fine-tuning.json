@@ -1,0 +1,15 @@
+{
+  "name": "Chain-of-Thought (CoT) Fine-Tuning",
+  "description": "Fine-tuning LLMs using datasets that incorporate reasoning steps, enabling models to generate more logical and structured responses by mimicking human-like reasoning processes.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2305.14045",
+  "code_url": "https://github.com/kaistAI/CoT-Collection",
+  "open_source": false,
+  "intended_use": [
+    "Enhanced Reasoning"
+  ]
+}

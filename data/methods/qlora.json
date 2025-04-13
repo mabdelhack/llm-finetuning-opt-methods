@@ -1,15 +1,15 @@
 {
   "name": "QLoRA",
-  "description": "Quantized LoRA for memory-efficient fine-tuning of LLMs.",
-  "method_type": ["Quantized Fine-Tuning", "Parameter-Efficient Fine-Tuning"],
-  "gpus_required": 1,
-  "training_speed": "Moderate",
-  "model_compatibility": ["LLaMA", "OPT"],
-  "frameworks": ["Hugging Face Transformers", "PEFT"],
-  "license": "Apache 2.0",
+  "description": "Efficient fine-tuning approach that reduces memory usage by backpropagating gradients through a frozen, 4-bit quantized pretrained language model into Low-Rank Adapters (LoRA), enabling fine-tuning of large models on limited hardware without performance loss.",
+  "method_type": [
+    "Quantization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
   "source": "https://arxiv.org/abs/2305.14314",
-  "open_source": true,
-  "data_requirements": "Small labeled dataset",
-  "inference_optimized": true,
-  "intended_use": ["Chatbots", "Summarization"]
+  "code_url": "https://github.com/artidoro/qlora",
+  "open_source": false,
+  "intended_use": [
+    "Resource-Constrained Fine-Tuning"
+  ]
 }

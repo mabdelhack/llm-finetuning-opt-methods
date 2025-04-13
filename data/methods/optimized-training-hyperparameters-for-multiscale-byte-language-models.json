@@ -1,0 +1,15 @@
+{
+  "name": "Optimized Training Hyperparameters for Multiscale Byte Language Models",
+  "description": "The Multiscale Byte Language Model is a model-agnostic, hierarchical architecture for causal byte-level language modeling that scales to million-length sequences.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.14553",
+  "code_url": "https://github.com/ai4sd/multiscale-byte-lm",
+  "open_source": false,
+  "intended_use": [
+    "Hyperparameter Optimization"
+  ]
+}

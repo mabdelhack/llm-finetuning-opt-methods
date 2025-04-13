@@ -1,0 +1,15 @@
+{
+  "name": "Cross-Modal Coordination",
+  "description": "Techniques that enable LLMs to reason across different data types (modalities), enhancing tasks like visual question answering and image captioning by integrating cross-modal projections.",
+  "method_type": [
+    "Multi-Modal Reasoning"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/html/2409.18996v1",
+  "code_url": "https://github.com/ZuyiZhou/Awesome-Cross-modal-Reasoning-with-LLMs",
+  "open_source": false,
+  "intended_use": [
+    "Cross-Modal Reasoning"
+  ]
+}

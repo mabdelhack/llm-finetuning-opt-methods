@@ -1,0 +1,15 @@
+{
+  "name": "Instruction Fine-Tuning",
+  "description": "Fine-tuning LLMs on datasets consisting of instructional prompts and corresponding outputs to improve the model's ability to follow instructions across various tasks.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2109.01652",
+  "code_url": "https://github.com/google-research/flan",
+  "open_source": false,
+  "intended_use": [
+    "Task Adaptation"
+  ]
+}

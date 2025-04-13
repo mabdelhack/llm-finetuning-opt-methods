@@ -1,0 +1,15 @@
+{
+  "name": "Center Vector Regularization (CVR)",
+  "description": "A regularization method that encourages the representations of data points within the same class to be close to a center vector, enhancing the discriminative power of the model and improving classification performance.",
+  "method_type": [
+    "Regularization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.21313",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Classification Tasks"
+  ]
+}

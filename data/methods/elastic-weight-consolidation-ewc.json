@@ -1,0 +1,15 @@
+{
+  "name": "Elastic Weight Consolidation (EWC)",
+  "description": "A regularization technique that mitigates catastrophic forgetting by constraining the learning process in neural networks, adding a quadratic penalty term to the loss function to preserve important weights from previous tasks.",
+  "method_type": [
+    "Continual Learning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2306.10181",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Sequential Task Learning"
+  ]
+}

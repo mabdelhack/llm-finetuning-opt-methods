@@ -1,0 +1,15 @@
+{
+  "name": "Sequential Fine-Tuning",
+  "description": "Involves fine-tuning models on a sequence of tasks or instructions to improve performance on complex tasks by leveraging knowledge from previous tasks.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2402.18905",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Complex Task Learning"
+  ]
+}

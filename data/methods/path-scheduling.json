@@ -1,0 +1,15 @@
+{
+  "name": "Path Scheduling",
+  "description": "A method that integrates LLMs into path planning algorithms to enhance efficiency by leveraging global reasoning capabilities, effectively reducing the number of visited states.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2407.02511",
+  "code_url": "https://github.com/SilinMeng0510/llm-astar",
+  "open_source": false,
+  "intended_use": [
+    "Path Planning"
+  ]
+}

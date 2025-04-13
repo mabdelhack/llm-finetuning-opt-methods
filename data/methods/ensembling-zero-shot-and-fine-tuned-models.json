@@ -1,0 +1,15 @@
+{
+  "name": "Ensembling Zero-Shot and Fine-Tuned Models",
+  "description": "Combines the strengths of zero-shot learning models with fine-tuned models to improve performance across various tasks, leveraging the generalization of zero-shot models and the specificity of fine-tuned models.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2109.01903",
+  "code_url": "https://github.com/mlfoundations/wise-ft",
+  "open_source": false,
+  "intended_use": [
+    "Task Adaptation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Dialogue Fine-Tuning",
+  "description": "Fine-tuning LLMs on conversational datasets to enhance their ability to maintain context and coherence across multiple exchanges in dialogue systems.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2109.10126",
+  "code_url": "https://github.com/togethercomputer/together-cookbook/blob/main/Multiturn_Conversation_Finetuning.ipynb",
+  "open_source": false,
+  "intended_use": [
+    "Conversational AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Dynamic Low-Rank Sparse Adaptation for Large Language Models",
+  "description": "It seamlessly integrates low-rank adaptation into LLM sparsity within a unified framework, thereby enhancing the performance of sparse LLMs without increasing the inference latency. In particular, LoSA dynamically sparsifies the LoRA outcomes based on the corresponding sparse weights during fine-tuning, thus guaranteeing that the LoRA module can be integrated into the sparse LLMs post-training",
+  "method_type": [],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2502.14816",
+  "code_url": "https://github.com/wzhuang-xmu/LoSA",
+  "open_source": false,
+  "intended_use": [
+    "Sparse & Efficient Finetuning"
+  ]
+}

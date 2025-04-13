@@ -1,0 +1,15 @@
+{
+  "name": "Encoding Sentences into Quantum Space",
+  "description": "Methods that map classical data, such as sentences, into quantum states, enabling the application of quantum algorithms for tasks like natural language processing and enhancing computational capabilities.",
+  "method_type": [
+    "Quantum Computing"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/abs/2502.20744",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Quantum Natural Language Processing"
+  ]
+}

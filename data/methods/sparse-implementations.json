@@ -1,0 +1,15 @@
+{
+  "name": "Sparse Implementations",
+  "description": "Methods that leverage sparsity in LLMs to reduce the number of active parameters during computation, enhancing efficiency without significantly compromising performance.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/html/2407.10969v2",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Deployment"
+  ]
+}

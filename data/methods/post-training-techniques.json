@@ -1,0 +1,15 @@
+{
+  "name": "Post-Training Techniques",
+  "description": "Various methodologies applied after the initial training of LLMs to refine their performance, address challenges like catastrophic forgetting, and enhance capabilities such as reasoning and alignment.",
+  "method_type": [
+    "Post-Training"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.21321",
+  "code_url": "https://github.com/mbzuai-oryx/Awesome-LLM-Post-training",
+  "open_source": false,
+  "intended_use": [
+    "Model Refinement"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Stochastic Rounding and BF16",
+  "description": "Techniques that improve computational efficiency and performance of LLMs by using stochastic rounding and Brain Floating Point (BF16) precision, reducing memory usage and accelerating training without significant loss of accuracy.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2502.20566",
+  "code_url": "",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Training and Inference"
+  ]
+}

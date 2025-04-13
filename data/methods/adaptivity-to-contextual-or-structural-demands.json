@@ -1,0 +1,15 @@
+{
+  "name": "Adaptivity to Contextual or Structural Demands",
+  "description": "Involves designing LLMs that can adapt their processing strategies based on the context or structure of the input data, improving flexibility and performance across diverse tasks.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.19078",
+  "code_url": "https://github.com/Oldify/CLADA",
+  "open_source": false,
+  "intended_use": [
+    "Context-Aware Processing"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Proximal Policy Optimization (PPO)",
+  "description": "A reinforcement learning algorithm that alternates between sampling data through interaction with the environment and optimizing a surrogate objective function using stochastic gradient ascent.",
+  "method_type": [
+    "Alignment"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/abs/1707.06347",
+  "code_url": "https://github.com/nikhilbarhate99/PPO-PyTorch?tab=readme-ov-file",
+  "open_source": false,
+  "intended_use": [
+    "Policy Optimization"
+  ]
+}

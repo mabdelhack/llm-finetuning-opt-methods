@@ -1,0 +1,15 @@
+{
+  "name": "AMOR: A Recipe for Building Adaptable MOdulaR Knowledge Agents Through Process Feedback",
+  "description": "AMOR builds reasoning logic over a finite state machine (FSM) that solves problems through autonomous executions and transitions over disentangled modules. This allows humans to provide direct feedback to the individual modules, and thus naturally forms process supervision.",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Medium",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2402.01469",
+  "code_url": "https://github.com/JianGuanTHU/AMOR_Agent",
+  "open_source": false,
+  "intended_use": [
+    "Reasoning over Finite State Machines"
+  ]
+}

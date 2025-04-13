@@ -1,0 +1,15 @@
+{
+  "name": "Multiscale Byte Language Model (MBLM)",
+  "description": "Utilizes a hierarchical architecture in the decoder stack to handle long context windows efficiently, allowing training with extensive context on limited hardware resources.",
+  "method_type": [
+    "Architecture"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Slow",
+  "source": "https://arxiv.org/abs/2502.14553",
+  "code_url": "https://github.com/ai4sd/multiscale-byte-lm",
+  "open_source": false,
+  "intended_use": [
+    "Long Context Processing"
+  ]
+}

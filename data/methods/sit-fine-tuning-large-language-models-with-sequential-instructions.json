@@ -1,0 +1,15 @@
+{
+  "name": "SIT: Fine-tuning Large Language Models with Sequential Instructions",
+  "description": "It approaches sequential instruction tuning from a task-driven perspective, manually creating interpretable intermediate tasks for multilingual and visual question answering: namely ?translate then predict? and ?caption then answer?",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "Medium",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/pdf/2403.07794",
+  "code_url": "https://github.com/hanxuhu/SeqIns",
+  "open_source": false,
+  "intended_use": [
+    "Instruction-Following"
+  ]
+}

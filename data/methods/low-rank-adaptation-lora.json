@@ -1,0 +1,15 @@
+{
+  "name": "Low-Rank Adaptation (LoRA)",
+  "description": "Introduces trainable low-rank matrices into each layer of a pre-trained model, allowing efficient fine-tuning with significantly fewer parameters.",
+  "method_type": [
+    "PEFT"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2106.09685",
+  "code_url": "https://github.com/microsoft/LoRA",
+  "open_source": false,
+  "intended_use": [
+    "Task Adaptation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Computational Performance Optimization",
+  "description": "Techniques aimed at improving the efficiency and",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Fast",
+  "source": "https://huggingface.co/docs/transformers/main/en/llm_tutorial_optimization",
+  "code_url": "https://huggingface.co/docs/transformers/main/en/llm_tutorial_optimization",
+  "open_source": false,
+  "intended_use": [
+    "Efficient Deployment"
+  ]
+}

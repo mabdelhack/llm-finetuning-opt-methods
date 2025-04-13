@@ -1,0 +1,15 @@
+{
+  "name": "Backpropagation-Free Optimization",
+  "description": "Explores optimization methods that do not rely on traditional backpropagation, potentially reducing computational overhead and enabling alternative learning paradigms for LLMs.",
+  "method_type": [
+    "Optimization"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/pdf/2402.11592",
+  "code_url": "https://github.com/ZO-Bench/ZO-LLM",
+  "open_source": false,
+  "intended_use": [
+    "Alternative Learning Methods"
+  ]
+}

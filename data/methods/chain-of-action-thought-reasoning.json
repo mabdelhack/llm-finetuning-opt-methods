@@ -1,0 +1,15 @@
+{
+  "name": "Chain-of-Action-Thought Reasoning",
+  "description": "An approach that enhances the reasoning capabilities of LLMs through an iterative preference learning process inspired by strategies employed by AlphaZero, utilizing MCTS to iteratively collect preference data.",
+  "method_type": [
+    "Reasoning"
+  ],
+  "gpus_required": "Varies",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2502.02508",
+  "code_url": "https://github.com/satori-reasoning/Satori",
+  "open_source": false,
+  "intended_use": [
+    "Enhanced Reasoning"
+  ]
+}

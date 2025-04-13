@@ -1,0 +1,15 @@
+{
+  "name": "GPTQ",
+  "description": "A post-training quantization method that uses second-order information to perform accurate and efficient quantization of GPT models, enabling execution of large models on a single GPU with minimal accuracy degradation.",
+  "method_type": [
+    "Quantization"
+  ],
+  "gpus_required": "Low",
+  "training_speed": "Fast",
+  "source": "https://arxiv.org/abs/2210.17323",
+  "code_url": "https://github.com/IST-DASLab/gptq",
+  "open_source": false,
+  "intended_use": [
+    "Model Compression"
+  ]
+}

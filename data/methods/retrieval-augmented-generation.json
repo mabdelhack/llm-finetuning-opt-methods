@@ -1,0 +1,16 @@
+{
+  "name": "Retrieval-Augmented Generation",
+  "description": "It is a technique that enhances the capabilities of generative AI models, like large language models (LLMs), by incorporating information from external knowledge sources",
+  "method_type": [
+    "Fine-Tuning"
+  ],
+  "gpus_required": "High",
+  "training_speed": "Moderate",
+  "source": "https://arxiv.org/abs/2005.11401",
+  "code_url": "https://huggingface.co/docs/transformers/en/model_doc/rag",
+  "open_source": false,
+  "intended_use": [
+    "Open-Domain QA",
+    "Memory-Augmented Tasks"
+  ]
+}
