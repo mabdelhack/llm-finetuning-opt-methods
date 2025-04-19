@@ -1,18 +1,17 @@
-<<<<<<< HEAD
 name,description,method_type,source,code_url,open_source,gpus_required,training_speed,intended_use
 Supervised Fine-Tuning (SFT),Involves training a pre-trained LLM on a labeled dataset to adapt it to specific tasks or domains.,Fine-Tuning,https://arxiv.org/abs/2412.13337,https://github.com/huggingface/trl/blob/main/trl/scripts/sft.py,Yes,Varies,Moderate,Task Adaptation
 Reward Modeling,"Involves training a model to predict human preferences or rewards, often used in reinforcement learning to guide the behavior of LLMs.",Alignment,https://arxiv.org/abs/2502.10325,https://github.com/sanjibanc/agent_prm,Yes,Varies,Moderate,Preference Prediction
 Proximal Policy Optimization (PPO),A reinforcement learning algorithm that alternates between sampling data through interaction with the environment and optimizing a surrogate objective function using stochastic gradient ascent.,Alignment,https://arxiv.org/abs/1707.06347,https://github.com/nikhilbarhate99/PPO-PyTorch?tab=readme-ov-file,Yes,High,Slow,Policy Optimization
 Direct Preference Optimization (DPO),"An algorithm that directly optimizes a language model to adhere to human preferences without explicit reward modeling or reinforcement learning, simplifying the alignment process.",Alignment,https://arxiv.org/abs/2305.18290,https://github.com/eric-mitchell/direct-preference-optimization,Yes,Varies,Moderate,Preference Alignment
 Optimistic model Rollouts for Pessimistic offline policy Optimization (ORPO),"A value-based algorithm for KL-regularized reinforcement learning that guides the reference policy using the optimal regularized Q function, aiming for optimal policy learning in LLM post-training.",Alignment,https://arxiv.org/abs/2401.05899,N/A,N/A,High,Slow,Policy Optimization
-Low-Rank Adaptation (LoRA),"Introduces trainable low-rank matrices into each layer of a pre-trained model, allowing efficient fine-tuning with significantly fewer parameters.",PEFT,https://arxiv.org/abs/2106.09685,https://github.com/microsoft/LoRA,Yes,Low,Fast,Task Adaptation
-Singular Value Fine-Tuning (SVF),"Decomposes model parameters using Singular Value Decomposition (SVD) and fine-tunes only the singular values, keeping other components frozen, to adapt models to new tasks with minimal risk of overfitting.",PEFT,https://arxiv.org/abs/2206.06122,https://github.com/syp2ysy/SVF,Yes,Low,Fast,Few-Shot Learning
-Parameter-Efficient Fine-Tuning (PEFT),"A broad class of methods that fine-tune pre-trained models by updating a small subset of parameters, reducing computational costs while maintaining performance. Examples include LoRA, SVF, and adapters.",PEFT,https://arxiv.org/abs/2403.08484,N/A,N/A,Varies,Varies,Task Adaptation
+Low-Rank Adaptation (LoRA),"Introduces trainable low-rank matrices into each layer of a pre-trained model, allowing efficient fine-tuning with significantly fewer parameters.",Fine-Tuning,https://arxiv.org/abs/2106.09685,https://github.com/microsoft/LoRA,Yes,Low,Fast,Task Adaptation
+Singular Value Fine-Tuning (SVF),"Decomposes model parameters using Singular Value Decomposition (SVD) and fine-tunes only the singular values, keeping other components frozen, to adapt models to new tasks with minimal risk of overfitting.",Fine-Tuning,https://arxiv.org/abs/2206.06122,https://github.com/syp2ysy/SVF,Yes,Low,Fast,Few-Shot Learning
+Parameter-Efficient Fine-Tuning (PEFT),"A broad class of methods that fine-tune pre-trained models by updating a small subset of parameters, reducing computational costs while maintaining performance. Examples include LoRA, SVF, and adapters.",Fine-Tuning,https://arxiv.org/abs/2403.08484,N/A,N/A,Varies,Varies,Task Adaptation
 Category-Wise Fine-Tuning (CFT),"Fine-tunes models by focusing on individual categories, using known labels to adjust model predictions and reduce inaccuracies caused by incorrect pseudo-labels.",Fine-Tuning,https://arxiv.org/abs/2401.16991,https://github.com/maxium0526/category-wise-fine-tuning,Yes,Varies,Moderate,Classification Tasks
 Sequential Fine-Tuning,Involves fine-tuning models on a sequence of tasks or instructions to improve performance on complex tasks by leveraging knowledge from previous tasks.,Fine-Tuning,https://arxiv.org/abs/2402.18905,N/A,Yes,Varies,Moderate,Complex Task Learning
 Gradient-Guided Annealing,"Aims to improve domain generalization by iteratively annealing model parameters in the early stages of training to align gradients across domains, reducing domain conflicts.",Optimization,https://arxiv.org/abs/2502.20162,https://github.com/aristotelisballas/GGA,Yes,Varies,Moderate,Domain Generalization
 Multiscale Byte Language Model (MBLM),"Utilizes a hierarchical architecture in the decoder stack to handle long context windows efficiently, allowing training with extensive context on limited hardware resources.",Architecture,https://arxiv.org/abs/2502.14553,https://github.com/ai4sd/multiscale-byte-lm,Yes,High,Slow,Long Context Processing
-Modular LoRA,"Extends LoRA by creating a library of LoRA adapters for different tasks, enabling modular and reusable components for efficient multi-task learning.",PEFT,https://arxiv.org/abs/2405.11157,N/A,N/A,Low,Fast,Multi-Task Learning
+Modular LoRA,"Extends LoRA by creating a library of LoRA adapters for different tasks, enabling modular and reusable components for efficient multi-task learning.",Fine-Tuning,https://arxiv.org/abs/2405.11157,N/A,N/A,Low,Fast,Multi-Task Learning
 Multi-Model Stochastic Particle-Based Variational Bayesian Inference,"A framework capable of exploring multiple high-dimensional parameter spaces for joint model selection and parameter estimation, addressing challenges in complex estimation problems.",Optimization,https://arxiv.org/abs/2502.20690,N/A,N/A,High,Slow,Model Selection and Parameter Estimation
 Path Scheduling,"A method that integrates LLMs into path planning algorithms to enhance efficiency by leveraging global reasoning capabilities, effectively reducing the number of visited states.",Optimization,https://arxiv.org/abs/2407.02511,https://github.com/SilinMeng0510/llm-astar,Yes,Varies,Moderate,Path Planning
 Factuality-Aware Fine-Tuning,A technique aimed at reducing hallucinations in LLMs by identifying and mitigating factors that lead to factual inaccuracies during both supervised fine-tuning and reinforcement learning alignment steps.,Fine-Tuning,https://arxiv.org/abs/2405.01525,N/A,N/A,Varies,Moderate,Improving Response Factuality
@@ -26,7 +25,7 @@ Distillation-Based Fine-Tuning,"Training smaller models to replicate the behavio
 QLoRA,"Efficient fine-tuning approach that reduces memory usage by backpropagating gradients through a frozen, 4-bit quantized pretrained language model into Low-Rank Adapters (LoRA), enabling fine-tuning of large models on limited hardware without performance loss.",Quantization,https://arxiv.org/abs/2305.14314,https://github.com/artidoro/qlora,Yes,Low,Fast,Resource-Constrained Fine-Tuning
 GPTQ,"A post-training quantization method that uses second-order information to perform accurate and efficient quantization of GPT models, enabling execution of large models on a single GPU with minimal accuracy degradation.",Quantization,https://arxiv.org/abs/2210.17323,https://github.com/IST-DASLab/gptq,Yes,Low,Fast,Model Compression
 SparseGPT,"A one-shot pruning method that efficiently reduces the size of massive language models by removing unimportant weights, achieving significant sparsity with negligible impact on performance.",Pruning,https://arxiv.org/abs/2301.00774,https://github.com/IST-DASLab/sparsegpt,Yes,Low,Fast,Model Compression
-AdaLoRA,"An adaptive budget allocation method for parameter-efficient fine-tuning that dynamically assigns parameter budgets among weight matrices based on their importance, enhancing fine-tuning performance while maintaining efficiency.",PEFT,https://arxiv.org/abs/2303.10512,https://github.com/QingruZhang/AdaLoRA,Yes,Low,Fast,Task Adaptation
+AdaLoRA,"An adaptive budget allocation method for parameter-efficient fine-tuning that dynamically assigns parameter budgets among weight matrices based on their importance, enhancing fine-tuning performance while maintaining efficiency.",Fine-Tuning,https://arxiv.org/abs/2303.10512,https://github.com/QingruZhang/AdaLoRA,Yes,Low,Fast,Task Adaptation
 P-Tuning v2,"An optimized prompt tuning method that enables prompt tuning to match the performance of full model fine-tuning across various model scales and tasks, with only 0.1%-3% of parameters tuned.",Prompt Tuning,https://arxiv.org/abs/2110.07602,https://github.com/THUDM/P-tuning-v2,Yes,Low,Fast,Task Adaptation
 Tree-of-Thoughts (ToT),"A framework that enhances problem-solving capabilities of LLMs by allowing deliberate decision-making through exploration of multiple reasoning paths, enabling backtracking and strategic planning.",Reasoning,https://arxiv.org/abs/2305.10601,https://github.com/princeton-nlp/tree-of-thought-llm,Yes,Varies,Moderate,Complex Problem Solving
 Graph of Thoughts (GoT),"A framework that models information generated by LLMs as an arbitrary graph, where units of information (""thoughts"") are vertices, and edges correspond to dependencies, facilitating complex problem-solving.",Reasoning,https://arxiv.org/abs/2308.09687,https://github.com/spcl/graph-of-thoughts,Yes,Varies,Moderate,Complex Problem Solving
@@ -87,77 +86,3 @@ FactPEGASUS: Factuality-Aware Pre-training and Fine-tuning for Abstractive Summa
 LoRA-Pro,"A method that enhances LoRA's performance by strategically adjusting the gradients of these low-rank matrices. This adjustment allows the low-rank gradient to more accurately approximate the full fine-tuning gradient, thereby narrowing the performance gap between LoRA and full fine-tuning.",Fine-Tuning,https://openreview.net/forum?id=gTwRMU3lJ5,https://github.com/mrflogs/LoRA-Pro,Yes,Low,Fast,Enhanced Parameter-Efficient Tuning
 Retrieval Instead of Fine-tuning,"A method that creates a vectorized database of LoRAs, enabling efficient retrieval and application of model adaptations to new tasks",Fine-Tuning,https://arxiv.org/abs/2410.09908,N/A,N/A,Low,Fast,Retrieval-Augmented Applications
 Cicada: A Pipeline-Efficient Approach to Serverless Inference with Decoupled Management,A method to ensure that high-priority inference tasks are completed swiftly by modifying resource allocation,Optimization,https://arxiv.org/abs/2502.20959,N/A,N/A,Medium,Fast,Efficient Inference Task Routing
-=======
-name,description,method_type,gpus_required,training_speed,model_compatibility,frameworks,license,source,code_url,open_source,data_requirements,inference_optimized,intended_use
-Reinforcement Learning from Human Feedback (RLHF),A method that aligns LLMs using reward models trained from human preferences.,"Alignment, RL",,,,,Apache 2.0,,,False,,False,
-Supervised Fine-Tuning (SFT),Fine-tuning using labeled datasets to align models with desired outputs.,Fine-Tuning,2.0,Moderate,,,Apache 2.0,,,False,,False,
-Low-Rank Adaptation (LoRA),A parameter-efficient fine-tuning technique using low-rank updates.,PEFT,,,,,Apache 2.0,,,False,,False,
-Singular Value Fine-Tuning (SVF),,,,,,,Apache 2.0,,,False,,False,
-Parameter-Efficient Fine-Tuning (PEFT),,,,,,,Apache 2.0,,,False,,False,
-Category-Wise Fine-Tuning (CFT),,,,,,,Apache 2.0,,,False,,False,
-Sequential Fine-Tuning,,,,,,,Apache 2.0,,,False,,False,
-Gradient-Guided Annealing,,,,,,,Apache 2.0,,,False,,False,
-Hierarchical Decoder Stack,,,,,,,Apache 2.0,,,False,,False,
-Modular LoRA,,,,,,,Apache 2.0,,,False,,False,
-Multi-Model Stochastic Particle-Based Variational Bayesian Inference,,,,,,,Apache 2.0,,,False,,False,
-Path Scheduling,,,,,,,Apache 2.0,,,False,,False,
-Direct Preference Optimization (DPO),A reward-free alignment method using pairwise preference data.,Alignment,,,,,Apache 2.0,,,False,,False,
-Factuality-Aware Fine-Tuning,,,,,,,Apache 2.0,,,False,,False,
-Knowledge Modularization and Cross-Modal Coordination,,,,,,,Apache 2.0,,,False,,False,
-Instruction Finetuning,Aligns models with human-like instructions using supervised data.,Fine-Tuning,,,,,Apache 2.0,,,False,,False,Instruction Following
-Dialogue Finetuning,Optimizing LLMs for multi-turn conversations.,Fine-Tuning,,,,,Apache 2.0,,,False,,False,Dialogue Agents
-Chain-of-Thought (CoT) Finetuning,Supervised tuning using reasoning-based chains for better logical output.,Reasoning,,,,,Apache 2.0,,,False,,False,
-Domain-Specific Finetuning,,,,,,,Apache 2.0,,,False,,False,
-Distillation-Based Finetuning,Transferring knowledge from large teacher models to smaller student models.,Distillation,,,,,Apache 2.0,,,False,,False,
-Preference and Alignment Supervised Finetuning (SFT),,,,,,,Apache 2.0,,,False,,False,
-QLoRA and GPTQ,Quantization-aware fine-tuning and inference optimization techniques for LLMs.,"Quantization, PEFT",1.0,,,"Hugging Face, GPTQ",Apache 2.0,,,True,,True,"Chatbots, Summarization"
-SparseGPT,Sparse fine-tuning method optimizing memory and computation.,"Quantization, Sparse",1.0,Fast,,,Apache 2.0,,,True,,True,Inference Optimization
-AdaLoRA,Adaptive version of LoRA that adjusts rank during training.,PEFT,,Fast,,PEFT,Apache 2.0,,,True,,False,
-P-Tuning v2,Prefix-based prompt tuning with improved generalization.,Prompt Tuning,,,,,Apache 2.0,,,False,,False,
-Tree-of-Thoughts (ToT) and Graph of Thoughts (GoT),Extends CoT by exploring reasoning paths as trees or graphs.,Reasoning,,,,,Apache 2.0,,,False,,False,
-Confidence-Based Sampling,,,,,,,Apache 2.0,,,False,,False,
-Search Against Verifiers,,,,,,,Apache 2.0,,,False,,False,
-Monte Carlo Tree Search (MCTS),Search strategy to optimize output by evaluating multiple reasoning paths.,Reasoning,,,,,Apache 2.0,,,False,,False,
-Chain-of-Action-Thought Reasoning,,,,,,,Apache 2.0,,,False,,False,
-Precision Optimization,,,,,,,Apache 2.0,,,False,,False,
-Post-Training Techniques,,,,,,,Apache 2.0,,,False,,False,
-Computational Performance Optimization,,,,,,,Apache 2.0,,,False,,False,
-Stochastic Rounding and BF16,,,,,,,Apache 2.0,,,False,,False,
-Phrasal Paraphrase Relations,,,,,,,Apache 2.0,,,False,,False,
-Hyperparameter Tuning,,,,,,,Apache 2.0,,,False,,False,
-Low-Bit Quantization,,,,,,,Apache 2.0,,,False,,False,
-Sparse Implementations,,,,,,,Apache 2.0,,,False,,False,
-Zeroth-Order (ZO) Optimization,,,,,,,Apache 2.0,,,False,,False,
-Long-Sequence Inference Optimization,,,,,,,Apache 2.0,,,False,,False,
-Resource Management Strategies,,,,,,,Apache 2.0,,,False,,False,
-Alignment Loss and Bidirectional Negative Feedback (BNF),,,,,,,Apache 2.0,,,False,,False,
-Learning-on-Model Framework,,,,,,,Apache 2.0,,,False,,False,
-Parallel Strategies,,,,,,,Apache 2.0,,,False,,False,
-Ensembling Zero-Shot and Fine-Tuned Models,,,,,,,Apache 2.0,,,False,,False,
-Fine-Tuning of Sparse LLM,,,,,,,Apache 2.0,,,False,,False,
-Optimal Reinforcement Learning Post-Training,,,,,,,Apache 2.0,,,False,,False,
-Content-Preserving Optimization with Attention Distillation Loss,,,,,,,Apache 2.0,,,False,,False,
-Graph-Driven Dynamic Similarity Grouping,,,,,,,Apache 2.0,,,False,,False,
-Adaptivity to Contextual or Structural Demands,,,,,,,Apache 2.0,,,False,,False,
-Tuning Dynamics Based on Singular Value Decomposition,,,,,,,Apache 2.0,,,False,,False,
-Backpropagation-Free Optimization,,,,,,,Apache 2.0,,,False,,False,
-Prompt-Based Uncertainty Estimation,,,,,,,Apache 2.0,,,False,,False,
-Optimized Training Hyperparameters for Multiscale Byte Language Models,,,,,,,Apache 2.0,,,False,,False,
-Low-Rank Approximation,,,,,,,Apache 2.0,,,False,,False,
-Optimizations in LLM Scheduling and Resource Management,,,,,,,Apache 2.0,,,False,,False,
-Learning from Execution Feedback During Training,,,,,,,Apache 2.0,,,False,,False,
-Model Dynamics with Simple Cross-Attention Layers,,,,,,,Apache 2.0,,,False,,False,
-Adjusting Gradients of Low-Rank Matrices,,,,,,,Apache 2.0,,,False,,False,
-Reasoning Based on Finite State Machine,,,,,,,Apache 2.0,,,False,,False,
-Sequence-Level Prefix Information,,,,,,,Apache 2.0,,,False,,False,
-Local Semantic Adaptability,,,,,,,Apache 2.0,,,False,,False,
-Data Rehearsal,Reusing past data during training to retain knowledge.,Forgetting Mitigation,,,,,Apache 2.0,,,False,,False,
-Elastic Weight Consolidation,Regularization-based technique to mitigate catastrophic forgetting.,Forgetting Mitigation,,,,,Apache 2.0,,,False,,False,
-Hierarchical Network Organization,,,,,,,Apache 2.0,,,False,,False,
-Position-Wise Prompts,,,,,,,Apache 2.0,,,False,,False,
-Center Vector Regularization (CVR),,,,,,,Apache 2.0,,,False,,False,
-Quantum Circuit Optimization,Training and optimizing language models on quantum computing circuits.,Quantum,,,,,Apache 2.0,,,False,,False,
-Encoding Sentences into Quantum Space,,,,,,,Apache 2.0,,,False,,False,
-Reduction Process and Quantum Gates,,,,,,,Apache 2.0,,,False,,False,
-Hyperparameters in Quantum Circuits,,,,,,,Apache 2.0,,,False,,False,
->>>>>>> refs/remotes/origin/main

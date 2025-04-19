@@ -2,7 +2,7 @@
   "name": "Low-Rank Adaptation (LoRA)",
   "description": "Introduces trainable low-rank matrices into each layer of a pre-trained model, allowing efficient fine-tuning with significantly fewer parameters.",
   "method_type": [
-    "PEFT"
+    "Fine-Tuning"
   ],
   "gpus_required": "Low",
   "training_speed": "Fast",

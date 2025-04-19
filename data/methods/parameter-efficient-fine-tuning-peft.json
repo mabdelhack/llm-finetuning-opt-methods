@@ -2,7 +2,7 @@
   "name": "Parameter-Efficient Fine-Tuning (PEFT)",
   "description": "A broad class of methods that fine-tune pre-trained models by updating a small subset of parameters, reducing computational costs while maintaining performance. Examples include LoRA, SVF, and adapters.",
   "method_type": [
-    "PEFT"
+    "Fine-Tuning"
   ],
   "gpus_required": "Varies",
   "training_speed": "Varies",

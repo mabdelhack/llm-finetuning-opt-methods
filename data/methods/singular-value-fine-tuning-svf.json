@@ -2,7 +2,7 @@
   "name": "Singular Value Fine-Tuning (SVF)",
   "description": "Decomposes model parameters using Singular Value Decomposition (SVD) and fine-tunes only the singular values, keeping other components frozen, to adapt models to new tasks with minimal risk of overfitting.",
   "method_type": [
-    "PEFT"
+    "Fine-Tuning"
   ],
   "gpus_required": "Low",
   "training_speed": "Fast",

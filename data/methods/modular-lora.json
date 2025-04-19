@@ -2,7 +2,7 @@
   "name": "Modular LoRA",
   "description": "Extends LoRA by creating a library of LoRA adapters for different tasks, enabling modular and reusable components for efficient multi-task learning.",
   "method_type": [
-    "PEFT"
+    "Fine-Tuning"
   ],
   "gpus_required": "Low",
   "training_speed": "Fast",
