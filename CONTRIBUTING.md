@@ -8,19 +8,6 @@ We welcome additions of new methods, corrections, metadata updates, and improvem
 
 ## 📌 How to Add or Update a Method
 
-### 🔹 Option 1: Through the CSV file
-
-1. Open the `llm_methods.csv` file.
-2. Add a new row for your method OR update an existing one.
-3. Save the file.
-4. Run the provided Python script to regenerate JSON files:
-
-    ```bash
-    python convert_csv_to_json.py
-    ```
-
-### 🔹 Option 2: Add JSON directly
-
 1. Go to the `data/methods/` directory.
 2. Create a new file named after your method (e.g. `your-method-name.json`)
 3. Use the following JSON structure:
@@ -30,16 +17,11 @@ We welcome additions of new methods, corrections, metadata updates, and improvem
       "name": "Your Method Name",
       "description": "Short explanation of what this method does.",
       "method_type": ["Fine-Tuning", "Quantization"],
-      "gpus_required": 1,
+      "gpus_required": "Low",
       "training_speed": "Fast",
-      "model_compatibility": ["LLaMA", "T5"],
-      "frameworks": ["Hugging Face"],
-      "license": "Apache 2.0",
       "source": "https://arxiv.org/abs/...",
       "code_url": "https://github.com/your-repo",
       "open_source": true,
-      "data_requirements": "Labeled data, preference pairs",
-      "inference_optimized": false,
       "intended_use": ["Chatbots", "Classification"]
     }
     ```
@@ -83,7 +65,4 @@ We’ll review and merge your contribution soon 🚀
 
 If you have ideas for features, filters, or want to report an issue:
 
-- Open a [GitHub Issue](https://github.com/YOUR_REPO/issues)
-- Or start a [Discussion](https://github.com/YOUR_REPO/discussions)
-
-Thanks for helping make LLM research more accessible! 🙌
+- Open a [GitHub Issue](https://github.com/mabdelhack/llm-finetuning-opt-methods/issues)

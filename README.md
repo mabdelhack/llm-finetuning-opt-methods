@@ -7,18 +7,7 @@ A collaborative, filterable database of fine-tuning and optimization techniques 
 ## 🔗 Live Demo
 
 Check out the deployed version here:  
-👉 **[https://your-deployment-url.com](https://your-deployment-url.com)**  
-*(Replace this with your actual Vercel or Netlify link)*
-
----
-
-## ✨ Features
-
-- 🔍 Filter methods by type, GPU requirement, training speed, and more  
-- ✅ Multi-select filters via sidebar (like online shopping UX)  
-- 📁 Methods stored in editable JSON or CSV format  
-- 🧑‍💻 Open-source and community-contributable via GitHub  
-- 🔄 Sync tools to convert CSV ⇄ JSON  
+👉 **[https://llm-finetuning-opt-methods.vercel.app/](https://llm-finetuning-opt-methods.vercel.app/)**  
 
 ---
 
@@ -35,8 +24,8 @@ Check out the deployed version here:
 1. Clone the repo:
 
     ```bash
-    git clone https://github.com/YOUR_USERNAME/llm-methods-explorer.git
-    cd llm-methods-explorer
+    git clone https://github.com/mabdelhack/llm-finetuning-opt-methods.git
+    cd llm-finetuning-opt-methods
     ```
 
 2. Install dependencies:
@@ -61,8 +50,7 @@ We welcome contributions of new methods and improvements!
 
 Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for how to:
 
-- Add a method via CSV or JSON  
-- Regenerate method files using `convert_csv_to_json.py`  
+- Add a method
 - Submit a pull request  
 
 ---
@@ -93,6 +81,3 @@ Built using:
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/)
-- [Hugging Face](https://huggingface.co/)
-
-And with inspiration from the amazing open-source AI community 💙
